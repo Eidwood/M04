@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>TuCocheYa · Gestionar reserva</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gestiona tu reserva de alquiler de coches, furgonetas o motos en TuCocheYa." />
+</head>
+<body>
+  <header style="display: flex; align-items: center;">
+    <a href="index.html" aria-label="Ir al inicio">
+      <img src="assets/logo.png" alt="Logo TuCocheYa" width="120" height="120" />
+    </a>
+    <a href="gestionar.html" style="margin-left: 10px;"><strong>Consulta tu reserva</strong></a>
+    <ul style="margin-left: auto;">
+      <a href="contacto.html"> Iniciar sesión</a>
+      <a href="contacto.html"> 🇪🇸 </a>
+      <a href="contacto.html"> EUR €</a>
+      <a href="contacto.html"> Ayuda y contacto</a>
+    </ul>
+  </header>
+
+  <main>
+    <section style="text-align: center;">
+      <h2>Gestionar reserva</h2>
+      <p>Introduce tu número de reserva y el correo con el que hiciste la reserva para consultar, modificar o cancelar.</p>
+    </section>
+
+    <section style="display: flex; justify-content: center; margin-top: 20px;">
+      <form action="#" method="post" style="text-align: left; border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 320px;">
+        <label for="codigo"><strong>Número de reserva</strong></label><br>
+        <input id="codigo" name="codigo" type="text" placeholder="Ej: ABC1234" required style="width: 100%; padding: 6px; margin-top: 5px; margin-bottom: 10px;"><br>
+
+        <label for="email"><strong>Correo electrónico</strong></label><br>
+        <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required style="width: 100%; padding: 6px; margin-top: 5px; margin-bottom: 10px;"><br>
+
+        <button type="submit" style="width: 100%; padding: 8px; background-color: black; color: white; border: none; cursor: pointer;">Consultar reserva</button>
+      </form>
+    </section>
+
+    <div style="margin-bottom: 30px;"></div>
+    
+    <section style="background-color: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 15px;">
+      <p>¿Necesitas ayuda con tu reserva? Contáctanos en <a href="contacto.html" style="color: white;"><strong>Ayuda y contacto</strong></a>.</p>
+    </section>
+  </main>
+
+  <div style="margin-bottom: 30px;"></div>
+
+  <footer style="display: flex; justify-content: space-between; align-items: center;">
+    <nav aria-label="Legal">
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+        <li><a href="#" style="margin-right: 10px;">Aviso legal</a></li>
+        <li><a href="#" style="margin-right: 10px;">Privacidad</a></li>
+        <small>&copy; <time datetime="2025">2025</time> TuCocheYa</small>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
