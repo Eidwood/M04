@@ -42,7 +42,9 @@
   <main class="contacto-main">
     <section>
       <h2 class="section-title">Ayuda y contacto</h2>
-      <p class="section-subtitle">Estamos aquí para ayudarte. Consulta nuestras vías de contacto directo.</p>
+      <p class="section-subtitle">
+        Estamos aquí para ayudarte. Consulta nuestras vías de contacto directo o envíanos un mensaje.
+      </p>
     </section>
 
     <section class="fade-in">
@@ -58,14 +60,43 @@
           </td>
           <td>
             <h4>📍 Oficinas</h4>
-            <p>Gran Via de les Corts Catalanes, 219 <br>08013, Barcelona</p>
+            <p>Gran Via de les Corts Catalanes, 219<br>08013, Barcelona</p>
           </td>
         </tr>
       </table>
     </section>
 
     <section class="info-section">
-      <p>¿Problemas con tu reserva? <a href="gestionar.html"><strong>Accede al área de gestión</strong></a> o contáctanos directamente.</p>
+      <p>
+        ¿Problemas con tu reserva?
+        <a href="gestionar.html"><strong>Accede al área de gestión</strong></a>
+        o contáctanos directamente.
+      </p>
+    </section>
+    <section class="fade-in">
+      <h3>Formulario de contacto</h3>
+
+      <form class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="motivo">Motivo de la consulta</label>
+        <select id="motivo" name="motivo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="reserva">Reserva</option>
+          <option value="pago">Pago</option>
+          <option value="soporte">Soporte técnico</option>
+          <option value="otros">Otros</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
     </section>
   </main>
 
