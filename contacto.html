@@ -73,10 +73,11 @@
         o contáctanos directamente.
       </p>
     </section>
+
     <section class="fade-in">
       <h3>Formulario de contacto</h3>
 
-      <form class="contact-form">
+      <form class="contact-form" id="contactoForm">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -97,6 +98,8 @@
 
         <button type="submit">Enviar mensaje</button>
       </form>
+
+      <p id="mensajeConfirmacion" style="display:none; color: green; margin-top: 10px;"></p>
     </section>
   </main>
 
@@ -109,5 +112,8 @@
       </nav>
     </div>
   </footer>
+
+  <script src="js/formulario.js"></script>
+  <script src="js/animacion.js"></script>
 </body>
 </html>
